@@ -1,0 +1,79 @@
+xmverilog(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xmverilog	22.03-s003: Started on Jan 03, 2026 at 02:09:26 CST
+ncverilog
+	tb.sv
+	JAM.v
+	+define+P2
+	+access+r
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+Recompiling... reason: file './JAM.v' is newer than expected.
+	expected: Sat Jan  3 02:06:11 2026
+	actual:   Sat Jan  3 02:09:24 2026
+file: JAM.v
+	module worklib.JAM:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.JAM:v <0x7e15940a>
+			streams:  23, words: 12640
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               39      39
+		Scalar wires:             3       -
+		Vectored wires:           6       -
+		Always blocks:           10      10
+		Initial blocks:           7       7
+		Cont. assignments:        1       1
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_xcelium171.so
+xcelium> source /usr/cad/cadence/ncverilog/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> run
+FSDB Dumper for Xcelium, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The simulator version is newer than the supported FSDB Writer.     *
+***********************************************************************
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'JAM.fsdb'
+*Verdi* : Begin traversing the scope (testfixture), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   2
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  54  59  59  59  32  40  62  40
+worker1:  54  32  32  79  32  38  32  62
+worker2:  54  54  30  38  32  38  59  54
+worker3:  30  59  32  32  62  40  45  79
+worker4:  32  32  38  32  62  38  62  32
+worker5:  79  45  32  62  32  32  32  59
+worker6:  32  38  32  59  54  30  30  45
+worker7:  30  79  32  32  62  30  45  32
+----------------------------------------------------------------------
+Get Valid at cycle:        19
+receive MinCost/MatchCount=    x/ x , golden MinCost/MatchCount= 250/ 6
+----------------------------------------------------------------------
+*************************
+**  FUNCTION WRONG!!   **
+*************************
+
+Simulation complete via $finish(1) at time 185 NS + 0
+./tb.sv:180                 $finish;
+xcelium> exit
+TOOL:	xmverilog	22.03-s003: Exiting on Jan 03, 2026 at 02:09:27 CST  (total: 00:00:01)

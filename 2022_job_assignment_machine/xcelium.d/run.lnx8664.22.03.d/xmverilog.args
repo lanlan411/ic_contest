@@ -1,0 +1,8 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+tb.sv
+JAM.v
++define+P2
++access+r

@@ -1,0 +1,32 @@
+s1(02Jan2026:02:50:31):  ncverilog tb.sv JAM.v +define+P1 
+s2(02Jan2026:02:53:40):  ncverilog tb.sv JAM.v +define+P1+ access+r 
+s3(02Jan2026:02:53:52):  ncverilog tb.sv JAM.v +define+P1+access+r 
+s4(02Jan2026:02:54:58):  ncverilog tb.sv JAM.v +define+P1+define+FSDB+access+r 
+s5(02Jan2026:02:55:35):  ncverilog tb.sv JAM.v +define+P1+access+r 
+s6(02Jan2026:03:01:58):  ncverilog tb.sv JAM.v +define+P1+access+r 
+s7(02Jan2026:04:00:28):  ncverilog tb.sv JAM.v +define+P1+access+rwc 
+s8(02Jan2026:04:05:35):  ncverilog tb.sv JAM.v +define+P1+ access+r 
+s9(02Jan2026:04:05:57):  ncverilog tb.sv JAM.v +define+P1 +access+rwc -l nc.log 
+s10(02Jan2026:04:07:19):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s11(02Jan2026:04:07:40):  ncverilog tb.sv JAM.v +define+P1+access+rwc 
+s12(02Jan2026:04:08:07):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s13(03Jan2026:00:34:04):  ncverilog tb.sv JAM.V +define+P1 +access+r 
+s14(03Jan2026:00:34:24):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s15(03Jan2026:00:35:46):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s16(03Jan2026:00:36:39):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s17(03Jan2026:00:37:35):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s18(03Jan2026:00:41:53):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s19(03Jan2026:00:43:59):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s20(03Jan2026:00:44:51):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s21(03Jan2026:00:45:50):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s22(03Jan2026:00:52:55):  ncverilog tb.sv JAM.v +define+P1 +access+r 
+s23(03Jan2026:00:54:30):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s24(03Jan2026:00:57:58):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s25(03Jan2026:01:06:00):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s26(03Jan2026:01:22:33):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s27(03Jan2026:01:34:58):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s28(03Jan2026:01:36:22):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s29(03Jan2026:01:38:44):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s30(03Jan2026:01:43:40):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s31(03Jan2026:02:06:13):  ncverilog tb.sv JAM.v +define+P2 +access+r 
+s32(03Jan2026:02:09:26):  ncverilog tb.sv JAM.v +define+P2 +access+r 
