@@ -1,14 +1,14 @@
 xmverilog(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
-TOOL:	xmverilog	22.03-s003: Started on Jan 03, 2026 at 02:09:26 CST
+TOOL:	xmverilog	22.03-s003: Started on Jan 07, 2026 at 03:48:18 CST
 ncverilog
 	tb.sv
 	JAM.v
-	+define+P2
+	+define+P3
 	+access+r
 xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
 Recompiling... reason: file './JAM.v' is newer than expected.
-	expected: Sat Jan  3 02:06:11 2026
-	actual:   Sat Jan  3 02:09:24 2026
+	expected: Wed Jan  7 03:47:27 2026
+	actual:   Wed Jan  7 03:48:17 2026
 file: JAM.v
 	module worklib.JAM:v
 		errors: 0, warnings: 0
@@ -17,8 +17,8 @@ file: JAM.v
 xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.JAM:v <0x7e15940a>
-			streams:  23, words: 12640
+		worklib.JAM:v <0x59896742>
+			streams:  26, words: 15095
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -54,26 +54,26 @@ FSDB Dumper for Xcelium, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
 *******************************
 ** Simulation Start          **
 *******************************
-PATTERN:   2
+PATTERN:   3
 -------------- Cost Table --------------
 Jobs       0   1   2   3   4   5   6   7
-worker0:  54  59  59  59  32  40  62  40
-worker1:  54  32  32  79  32  38  32  62
-worker2:  54  54  30  38  32  38  59  54
-worker3:  30  59  32  32  62  40  45  79
-worker4:  32  32  38  32  62  38  62  32
-worker5:  79  45  32  62  32  32  32  59
-worker6:  32  38  32  59  54  30  30  45
-worker7:  30  79  32  32  62  30  45  32
+worker0:  81  60  60  65  96  60  65  96
+worker1:  96  60  66  96  60  60  60  81
+worker2:  96  66  60  99  60  81  65  65
+worker3:  66  96  80  99  81  81  96  60
+worker4:  81  96  65  96  60  96  60  81
+worker5:  60  96  80  96  80  60  81  60
+worker6:  99  60  99  65  80  80  81  66
+worker7:  65  60  60  99  99  80  60  96
 ----------------------------------------------------------------------
-Get Valid at cycle:        19
-receive MinCost/MatchCount=    x/ x , golden MinCost/MatchCount= 250/ 6
+Get Valid at cycle:    524154
+receive MinCost/MatchCount=  485/ 9 , golden MinCost/MatchCount= 485/ 9
 ----------------------------------------------------------------------
 *************************
-**  FUNCTION WRONG!!   **
+**  FUNCTION  CORRECT  **
 *************************
 
-Simulation complete via $finish(1) at time 185 NS + 0
+Simulation complete via $finish(1) at time 5241535 NS + 0
 ./tb.sv:180                 $finish;
 xcelium> exit
-TOOL:	xmverilog	22.03-s003: Exiting on Jan 03, 2026 at 02:09:27 CST  (total: 00:00:01)
+TOOL:	xmverilog	22.03-s003: Exiting on Jan 07, 2026 at 03:48:21 CST  (total: 00:00:03)

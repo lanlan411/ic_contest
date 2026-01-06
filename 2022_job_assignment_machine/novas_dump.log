@@ -23,15 +23,15 @@ HOME=/home/t112830043
 PATH=/usr/cad/mentor/Catapult/cur//Mgc_home/bin:/usr/cad/mentor/calibre/aoi_cal_2022.3_33.19/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/xa/2022.06//GNU/linux64/gcc/bin:/usr/cad/synopsys/xa/2022.06//bin:/usr/cad/synopsys/verdi/2020.03//bin:/usr/cad/synopsys/tmax/2020.09//bin:/usr/cad/synopsys/synthesis/2022.03/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/spyglass/2023.03//SPYGLASS_HOME/bin:/usr/cad/synopsys/primetime/2019.03-sp5-1//amd64/syn/bin:/usr/cad/synopsys/formality/2022.12/amd64/fm/bin:/usr/cad/cadence/JASPER/jasper_2021.03/bin:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/bin/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/bin:/usr/cad/cadence/GENUS/GENUS_21.10.000/tools/bin/64bit:/usr/cad/cadence/GENUS/GENUS_21.10.000/tools/bin:/usr/cad/cadence/ncverilog/XCELIUM_22.03.003/tools/bin/64bit:/usr/cad/cadence/ncverilog/XCELIUM_22.03.003/tools/bin:/bin:/usr/bin:/usr/ucb:/etc:.
 MAIL=/var/spool/mail/t112830043
 SHELL=/bin/tcsh
-SSH_CLIENT=140.124.249.101 9745 22
-SSH_CONNECTION=140.124.249.101 9745 140.124.73.164 22
+SSH_CLIENT=140.124.249.33 9935 22
+SSH_CONNECTION=140.124.249.33 9935 140.124.73.164 22
 SSH_TTY=/dev/pts/7
 TERM=xterm
 DISPLAY=localhost:11.0
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
 SELINUX_USE_CURRENT_RANGE=
-XDG_SESSION_ID=24178
+XDG_SESSION_ID=25158
 XDG_RUNTIME_DIR=/run/user/1166
 HOSTTYPE=x86_64-linux
 VENDOR=unknown
@@ -41,7 +41,7 @@ SHLVL=1
 PWD=/home/t112830043/ic_contest/2022_job_assignment_machine
 GROUP=users
 HOST=localhost
-REMOTEHOST=140.124.249.101
+REMOTEHOST=140.124.249.33
 HOSTNAME=localhost
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
@@ -79,12 +79,12 @@ Runtime command line arguments:
 argv[0]=xmverilog
 argv[1]=tb.sv
 argv[2]=JAM.v
-argv[3]=+define+P2
+argv[3]=+define+P3
 argv[4]=+access+r
 83 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.160 user,  245.53M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.160 user,  245.54M sys,  0.00M vm
 84 VC callback profile - scalar:0 vector:0
-85 Sat Jan  3 02:09:27 2026
+85 Wed Jan  7 03:48:19 2026
 86 pliAppInit
 87 FSDB_GATE is disabled.
 88 Enable Parallel Dumping.
@@ -93,7 +93,7 @@ argv[4]=+access+r
 91 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/libsscore_xcelium171.so through $LD_LIBRARY_PATH setting.
 92 argv[0]: JAM.fsdb
 93 argv[0]: 0
-94 argv[1]: (handle)0x55a36e8 testfixture
+94 argv[1]: (handle)0x4c6f1b8 testfixture
 95 FSDB Dumper for Xcelium, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
 96 (C) 1996 - 2020 by Synopsys, Inc.
 97 ***********************************************************************
@@ -106,11 +106,11 @@ argv[4]=+access+r
 104 *Verdi* : Create FSDB file 'JAM.fsdb'
 105 sps_call_fsdbDumpvars at 0 : /home/t112830043/ic_contest/2022_job_assignment_machine/tb.sv(51)
 106 argv[0]: 0
-107 argv[1]: (handle)0x55a36d8 testfixture
+107 argv[1]: (handle)0x4c6f1a8 testfixture
 108 *Verdi* : Begin traversing the scope (testfixture), layer (0).
 109 *Verdi* : End of traversing.
 110 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  346.00M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.170 user,  346.01M sys,  0.00M vm
                    incr: 0.010 sys,  0.000 user,  8.85M sys,  0.00M vm
                    accu: 0.010 sys,  0.000 user,  8.85M sys,  0.00M vm
               accu incr: 0.010 sys,  0.000 user,  8.85M sys,  0.00M vm
@@ -120,9 +120,9 @@ argv[4]=+access+r
                  accu: 43 var,  43 idcode,  43 callback
             accu incr: 43 var,  43 idcode,  43 callback
 111 VC callback profile - scalar:0 vector:0
-112 Sat Jan  3 02:09:27 2026
+112 Wed Jan  7 03:48:19 2026
 113 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  347.05M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.170 user,  347.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
                    accu: 0.010 sys,  0.000 user,  9.90M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
@@ -132,13 +132,13 @@ argv[4]=+access+r
                  accu: 43 var,  43 idcode,  43 callback
             accu incr: 0 var,  0 idcode,  0 callback
 114 VC callback profile - scalar:7 vector:36
-115 Sat Jan  3 02:09:27 2026
+115 Wed Jan  7 03:48:19 2026
 116 sps_call_fsdbDumpMDA at 0 : /home/t112830043/ic_contest/2022_job_assignment_machine/tb.sv(52)
 117 *Verdi* : Begin traversing the MDAs, layer (0).
 118 *Verdi* : Enable +mda and +packedmda dumping.
 119 *Verdi* : End of traversing the MDAs.
 120 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  347.05M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.170 user,  347.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
@@ -148,9 +148,9 @@ argv[4]=+access+r
                  accu: 72 var,  72 idcode,  72 callback
             accu incr: 72 var,  72 idcode,  72 callback
 121 VC callback profile - scalar:7 vector:36
-122 Sat Jan  3 02:09:27 2026
+122 Wed Jan  7 03:48:19 2026
 123 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  347.05M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.170 user,  347.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
@@ -160,16 +160,16 @@ argv[4]=+access+r
                  accu: 72 var,  72 idcode,  72 callback
             accu incr: 0 var,  0 idcode,  0 callback
 124 VC callback profile - scalar:7 vector:108
-125 Sat Jan  3 02:09:27 2026
-126 End of simulation at 18500
-127 VC callback profile - scalar:90 vector:418
-128 Sat Jan  3 02:09:27 2026
+125 Wed Jan  7 03:48:19 2026
+126 End of simulation at 524153500
+127 VC callback profile - scalar:2096630 vector:4712164
+128 Wed Jan  7 03:48:20 2026
 129 Begin FSDB profile info:
-130 FSDB Writer : bc1(90) bcn(418) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.044084) io wait(0.000000) theadpool wait(0.000000)
+130 FSDB Writer : bc1(2096630) bcn(4712164) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.452027) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 131 End FSDB profile info
-132 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
-133                        ProduceTime:0.223791633 ConsumerTime:0.000000000 Buffer:64MB
+132 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:56 BlockUsed:58
+133                        ProduceTime:1.374423373 ConsumerTime:0.508913009 Buffer:64MB
 134 SimExit
 135 Sim process exit

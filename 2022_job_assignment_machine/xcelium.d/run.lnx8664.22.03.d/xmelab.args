@@ -2,7 +2,7 @@
 // File created by:  xmverilog
 // Do not modify this file
 //
-+define+P2
++define+P3
 +access+r
 -noshowtop
 -ACCESS

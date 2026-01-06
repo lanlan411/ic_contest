@@ -1,5 +1,6 @@
 module JAM #(
-	parameter LIST_COUNT=8
+	parameter LIST_COUNT=8,
+	parameter FULL_ARRANGE=40320
 )(
 input CLK,
 input RST,
@@ -18,8 +19,8 @@ reg [2:0] list [0:7];
 reg [9:0] MinCost_temp;
 reg [2:0] worker_count;
 reg [2:0] min_point_idx;
-integer i;
 reg [2:0] interchange_point_idx;
+integer i;
 
 always@(posedge CLK or posedge RST)begin
 	if(RST)
@@ -31,11 +32,12 @@ end
 always@(*)begin
 	case(state)
 		idle:next_state = dict_algorithm_step1;
-		dict_algorithm_step1: next_state = dict_algorithm_step2;
+		dict_algorithm_step1: next_state =dict_algorithm_step2;
 		dict_algorithm_step2: next_state = dict_algorithm_swap;
 		dict_algorithm_swap: next_state = dict_algorithm_step3;
 		dict_algorithm_step3: next_state = tally_cost;
-		tally_cost: next_state = (worker_count == LIST_COUNT-1)? output_total:tally_cost;
+		tally_cost: next_state = (worker_count == LIST_COUNT-1)? compare_cost:tally_cost;
+		compare_cost:next_state = ({list[0],list[1],list[2],list[3],list[4],list[5],list[6],list[7]} == {3'd7,3'd6,3'd5,3'd4,3'd3,3'd2,3'd1,3'd0})? output_total:dict_algorithm_step1;
 		output_total: next_state = output_total;
 		default:next_state = idle;
 	endcase
@@ -106,10 +108,24 @@ always@(posedge CLK or posedge RST)begin
 	if(RST)begin
 		MinCost_temp <= 10'd0;
 		worker_count <=3'd0;
+		MinCost <= 10'b1111111111;
+		MatchCount <= 4'd0;
 	end
 	else if (state == tally_cost)begin
 		MinCost_temp <= MinCost_temp + Cost;
 		worker_count <= worker_count +1;		
+	end
+
+	else if(state == compare_cost)begin
+		worker_count <= 0;
+		MinCost_temp <= 0;
+		if(MinCost > MinCost_temp)begin
+			MinCost <= MinCost_temp;
+			MatchCount <= 1'd1;
+		end
+		if(MinCost == MinCost_temp)begin
+			MatchCount <= MatchCount + 1'd1; 
+		end
 	end
 end
 
